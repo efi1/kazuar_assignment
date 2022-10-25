@@ -1,3 +1,5 @@
 .idea
 venv/
 venv
+src/kazuar_cli_activities.egg-info
+dist/

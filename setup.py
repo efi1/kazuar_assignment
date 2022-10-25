@@ -1,4 +1,4 @@
-"""Minimal setup file for github assignment."""
+"""Minimal setup file for Kazuar assignment."""
 
 from setuptools import find_packages
 from distutils.core import setup
@@ -7,9 +7,9 @@ with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 setup(
-    name='github_activities',
+    name='kazuar_cli_activities',
     version='0.1.0',
-    description='Manage various github activities',
+    description='Kazuar Assignment',
     packages=find_packages('src'),
     package_dir={'': 'src'},
 
@@ -17,5 +17,5 @@ setup(
     author='Efi Ovadia',
     author_email='efovadia@gmail.com',
     license='proprietary',
-    install_requires = [required, 'selenium']
+    install_requires = [required, 'selenium', 'pytest', 'webdriver-manager']
 )
