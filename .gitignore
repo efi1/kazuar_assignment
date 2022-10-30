@@ -4,3 +4,7 @@ venv
 src/kazuar_cli_activities.egg-info
 dist/
 src/clients/__pycache__/
+logfile.log
+tests/logfile.log
+src/utils/__pycache__/
+tests/__pycache__/
