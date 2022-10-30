@@ -22,7 +22,7 @@ e.g. python -m pytest --url <url address>
 
 - If not using a flag for a certain variable it will be taken from the setting.py
 
-- As the parameterized test - "test_cat_options" - you might want to avoid (deselect) running it at first.
+- As the parameterized test - "test_cat_options" - you might want to avoid (deselect) running it at the beginning.
  for that, you may use the configured pytest market slow (e.g. python -m pytest -m "not slow").
 
 
