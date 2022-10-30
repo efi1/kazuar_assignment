@@ -11,7 +11,7 @@ def test_logon_period(tests_client, data):
 
 
 def test_is_sata(data):
-    assert data.disk_type.lower() != 'sata', F"disk is: {data.disk_type}"
+    assert data.disk_type.lower() == 'sata', F"disk is: {data.disk_type}"
 
 
 @pytest.mark.slow
@@ -19,6 +19,6 @@ def test_cat_options(tests_client, test_data):
     logging.info(F"running test_cat_options with 'cat {test_data['cat option']}")
     res = tests_client.get_cmd_output(F"cat {test_data['cat option']} test")
     test_result = 'invalid' if 'invalid' in res else 'valid'
-    assert test_data['expected'] == test_result, F"cat option: {test_data['cat option']} is not valid"
+    assert test_data['expected'] == test_result, F"cat option {test_data['cat option']} is not valid"
 
 
