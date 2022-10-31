@@ -22,8 +22,11 @@ e.g. python -m pytest --url <url address>
 
 - If not using a flag for a certain variable it will be taken from the setting.py
 
-- As the parameterized test - "test_cat_options" - you might want to avoid (deselect) running it at the beginning.
- for that, you may use the configured pytest market slow (e.g. python -m pytest -m "not slow").
+- There are two parameterized tests - "test_cat_options1", "test_cat_options2".
+They have the same functionality, but implemented differently.
+
+- As the parameterized tests take reletically long time to run, you might want to avoid (deselect) running it at the beginning.
+  you might use for that the configured pytest marker slow (e.g. python -m pytest -m "not slow").
 
 
 - Under src.clients you may find the tests_client.py which include all main activities for creating the json data files as well
