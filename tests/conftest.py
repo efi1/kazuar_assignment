@@ -1,7 +1,7 @@
 """Shared fixtures."""
 import json
 import os
-from pathlib import Path # being used in func: pytest_addoption
+from pathlib import Path  # being used in func: pytest_addoption
 from pytest import fixture
 from tests import settings
 from src.utils.utils import dict_to_obj
@@ -65,8 +65,3 @@ def load_test_params(path):
 def test_data(request):
     data = request.param
     return data
-
-
-
-
-
