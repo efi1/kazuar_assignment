@@ -13,7 +13,7 @@ Usage:
 
 - Run "python setup.py install" (run it first)
 
-- It is recomended to use a virtual env.
+- It is recommended to use a virtual env.
 
 - All testing variables resides in settings.py under the tests folder.
 they can be updated directly at the settings.py or can alternatively used by the command line as flags.
@@ -25,7 +25,7 @@ e.g. python -m pytest --url <url address>
 - There are two parameterized tests - "test_cat_options1", "test_cat_options2".
 They have the same functionality, but implemented differently.
 
-- As the parameterized tests take reletically long time to run, you might want to avoid (deselect) running it at the beginning.
+- As the parameterized tests take relatively long time to run, you might want to avoid (deselect) running it at the beginning.
   you might use for that the configured pytest marker slow (e.g. python -m pytest -m "not slow").
 
 

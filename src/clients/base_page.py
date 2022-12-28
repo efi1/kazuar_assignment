@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 from selenium.webdriver.chrome.options import Options

@@ -9,3 +9,4 @@ tests/logfile.log
 src/utils/__pycache__/
 tests/__pycache__/
 build/
+target/data.json
