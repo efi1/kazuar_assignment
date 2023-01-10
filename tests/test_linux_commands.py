@@ -13,7 +13,7 @@ def test_logon_period(tests_client, data):
     assert logon_period.days <= 365, F"time from last login is more than a year: {logon_period.days}"
 
 
-@pytest.mark.slow
+# @pytest.mark.slow
 def test_is_sata(data):
     assert data.disk_type.lower() == 'sata', F"disk is: {data.disk_type}"
 
@@ -22,7 +22,7 @@ param_data = [(F"command: cat -{option}", "  expected: valid") for option in
               string.ascii_uppercase + string.ascii_lowercase]
 
 
-@pytest.mark.slow
+# @pytest.mark.slow
 @pytest.mark.parametrize("param, expected", param_data)
 def test_cat_options_verbose(param, expected, tests_client):
     command = param.split(':')[1].lstrip()
